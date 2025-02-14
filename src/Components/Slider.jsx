@@ -17,7 +17,7 @@ function Slider() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} className='myCarsoual'>
       <Carousel.Item className='carsoual-item'>
-      <img src={imgOne} alt="" className="d-block w-100" />
+      <img src={imgOne} alt="" className="d-block w-100" loading='lazy' />
         <Carousel.Caption className='carsoual-cap'>
           <h3>Where Comfort Meets Elegance</h3>
           <p>Discover furniture designed for your lifestyle.</p>
@@ -25,7 +25,7 @@ function Slider() {
       </Carousel.Item>
       <Carousel.Item className='carsoual-item'>
         {/* <ExampleCarouselImage text="Second slide" /> */}
-        <img src={imgTwo} alt="" className="d-block w-100" />
+        <img src={imgTwo} alt="" className="d-block w-100" loading='lazy'/>
         <Carousel.Caption className='carsoual-cap'>
           <h3>Create a Space You’ll Love Coming Home To</h3>
           <p>Let HomeVibe help you design your dream home.</p>
@@ -33,7 +33,7 @@ function Slider() {
       </Carousel.Item>
       <Carousel.Item className='carsoual-item'>
         {/* <ExampleCarouselImage text="Third slide" /> */}
-        <img src={imgThree} alt="" className="d-block w-100" />
+        <img src={imgThree} alt="" className="d-block w-100" loading='lazy' />
         <Carousel.Caption className='carsoual-cap'>
           <h3>Discover the Art of Living Well</h3>
           <p>

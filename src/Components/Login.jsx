@@ -3,20 +3,21 @@ import Form from 'react-bootstrap/Form';
 import './login.css'
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
-
-export default function Login () {
-  const navigate = useNavigate(); 
-function onSubmit (event) {
+export function onSubmit (event) {
   event.preventDefault()
   // navigate('/pay');
 }
+export default function Login () {
+  const navigate = useNavigate(); 
+  
+
 
     return (
    <div className="sign">
          <Form className='login-form' onSubmit={onSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>UserName</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" required />
+          <Form.Control type="email" placeholder="UserName" required />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>

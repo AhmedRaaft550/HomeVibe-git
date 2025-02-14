@@ -25,7 +25,7 @@ function NavBar() {
   return (
     <Navbar fixed='top' expand="lg" className="bg-body-tertiary ">
       <Container className='mynav-bar' >
-        <Link to="/" className='navbar-brand'>HomeVibe</Link>
+        <Link onClick={() => close()} to="/" className='navbar-brand'>HomeVibe</Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='myAutoNav'>
           <Nav className="me-auto" >

@@ -2,11 +2,14 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './signup.css'
+import { onSubmit } from './Login';
+
+
 
 function Signup() {
   return (
  <div className="sign">
-       <Form className='register-form'>
+       <Form className='register-form' onSubmit={onSubmit}>
 
 <Form.Group controlId="formBasicPassword">
       <Form.Label>First Name</Form.Label>
