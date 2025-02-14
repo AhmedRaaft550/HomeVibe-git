@@ -24,11 +24,36 @@
     transform: translate(-50%, -50%);
     font-size: 16px;
     text-transform: capitalize;
+    width: 100%;
   }
+
+  .details p {
+    line-height: 1.8 !important;
+    width: 50%;
+    margin: 0 auto !important;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 884px) {
+    .details p {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+
   
   .details img {
     border-radius: 20px;
     padding-bottom: 20px;
+  
+  }
+
+  @media (max-width:640px) {
+    .details img {
+      width: 100%;
+    }
+    
   }
   
   .back-btn {
