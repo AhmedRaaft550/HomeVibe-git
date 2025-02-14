@@ -13,21 +13,21 @@ function Signup() {
 
 <Form.Group controlId="formBasicPassword">
       <Form.Label>First Name</Form.Label>
-      <Form.Control type="text" placeholder="First Name" />
+      <Form.Control type="text" placeholder="First Name" required/>
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicCheckbox">
     </Form.Group>
 
     <Form.Group controlId="formBasicPassword">
       <Form.Label>Last Name</Form.Label>
-      <Form.Control type="text" placeholder="Last Name" />
+      <Form.Control type="text" placeholder="Last Name" required/>
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicCheckbox">
     </Form.Group>
 
     <Form.Group className='mb-3' controlId="formBasicEmail">
       <Form.Label>Email Address</Form.Label>
-      <Form.Control type="email" placeholder="Enter email" />
+      <Form.Control type="email" placeholder="Enter email" required />
       <Form.Text className="text-muted">
         We'll never share your email with anyone else.
       </Form.Text>
@@ -35,18 +35,18 @@ function Signup() {
 
     <Form.Group className="mb-3" controlId="formBasicPassword">
       <Form.Label>Country</Form.Label>
-      <Form.Control type="text" placeholder="Password" />
+      <Form.Control type="text" placeholder="Country" required/>
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicCheckbox">
     </Form.Group>
 
     <Form.Group className="mb-3" controlId="formBasicEmail">
       <Form.Label>Mobile Number</Form.Label>
-      <Form.Control type="number" placeholder="Enter Mobile Number" />
+      <Form.Control type="number" placeholder="Enter Mobile Number" required />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicEmail">
       <Form.Label>Po Box</Form.Label>
-      <Form.Control type="number" placeholder="Enter PO box" />
+      <Form.Control type="number" placeholder="Enter PO box (Optional)" />
     </Form.Group>
 
  
