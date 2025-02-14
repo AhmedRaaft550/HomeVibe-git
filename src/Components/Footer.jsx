@@ -12,6 +12,7 @@ function Footer() {
             <h1> - HomeVibe -</h1>
         </Card.Title>
         <p>"Your Style, Your Way – Customize Your Experience Today!"</p>
+        <p style={{fontWeight:"bold"}}>&copy; 2024 Created by Ahmed Raaft. All rights reserved.</p>
       </Card.ImgOverlay>
     </Card>
 </div>
