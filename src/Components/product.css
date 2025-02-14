@@ -1,0 +1,75 @@
+.products-container {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    }
+    
+    .product-title {
+      color: #108caeaa !important;
+      font-family:'Times New Roman', Times, serif !important;
+      /* font-weight: 600; */
+      text-transform: capitalize;
+    }
+    
+    .products-container  .card {
+      height: 450px;
+      margin: 10px auto 0 auto;
+      position: relative;
+      transition: 0.5s;
+     
+    }
+
+  
+    
+    .products-container  .card:hover {
+      transform: scale(1.05);
+       
+    }
+    
+    .products-container  .offer {
+    
+      font-weight: 800;
+      border-radius: 50%;
+      text-align: center;
+      color: #108caeaa;
+      margin: 0;
+      
+    }
+    
+    .products-container .best-seller {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .products-container  .card .addCart {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color:#61dafbaa !important;
+      color: black;
+      transition: all 0.5s;
+      font-family:'Times New Roman', Times, serif;
+      font-weight: 400;
+    }
+    
+    .products-container  .card .info {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color:transparent !important;
+      border: 2px solid #108caeaa;
+      color: black;
+      transition: all 0.5s;
+      font-family:'Times New Roman', Times, serif;
+      font-weight: 400;
+    }
+    
+    
+    
+    
+    
+    .products-container  .card button:hover,
+    .products-container  .card .info:hover {
+    
+      background-color: #108caeaa !important;
+    }
+    

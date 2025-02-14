@@ -1,0 +1,50 @@
+.sign {
+    height: 100vh !important;
+    background-color: #108caeaa;
+  }
+  
+  .register-form {
+    padding: 50px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    background: radial-gradient(circle at top left, #108caeaa 70%, #b6b5b5 20%) !important;
+    border-radius: 20px;
+  
+  }
+
+  @media (max-width:1170px) {
+    .register-form {
+      width: 100%;
+     
+    }
+  }
+  
+  .register-form::after {
+    position: absolute;
+    content: "HomeVibe";
+    bottom: 20px;
+    right: 90px;
+    color:#fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  
+  .register-form small {
+    color: #fff !important;
+  }
+  
+  .register-form input {
+    width: 100%;
+  }
+  
+  .register-form label {
+    color: #000 !important;
+  }
+  

@@ -1,0 +1,43 @@
+.details button {
+
+    background-color:#61dafbaa !important;
+    border: 2px solid #108caeaa;
+    color: black;
+    transition: all 0.5s;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+  }
+  
+  .details button:hover {
+    background-color: #108caeaa !important;
+  }
+  .show-details {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  
+  .details img {
+    border-radius: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .back-btn {
+    /* background-color: red !important; */
+    border: 2px solid #61dafbaa !important;
+    margin-left: 10px;
+    transition: all 0.5s ease-in-out !important;
+  }
+  
+  .back-btn:hover {
+    background-color: #108caeaa !important;
+  }

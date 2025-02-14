@@ -1,0 +1,46 @@
+.login-form {
+    padding: 50px;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    /* background-color: #000 !important; */
+    background: radial-gradient(circle at top left, #108caeaa 70%, #b6b5b5 20%) !important;
+    border-radius: 20px;
+    
+  }
+
+  @media (max-width:1150px) {
+    .login-form {
+      width: 100%;
+    }
+  }
+  
+  .login-form::after {
+    position: absolute;
+    content: "HomeVibe";
+    bottom: 20px;
+    right: 90px;
+    color:#fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .login-form label {
+    color: #fff !important;
+  }
+  
+  .login-form input {
+    width: 100%;
+    
+  }
+  
+  .login-form button {
+    background-color: #108caeaa !important;
+    color: #000 !important;
+  }
+  

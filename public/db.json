@@ -1,0 +1,102 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Timeless Comfort",
+            "price": 1080,
+            "description": "Upgrade your workspace with our premium Ergonomic Office Chair. Designed for long hours of comfort, this chair features advanced lumbar support, adjustable armrests, and a breathable mesh back to keep you cool and focused throughout your day. Whether you're working from home or in the office, this chair offers exceptional comfort, style, and support to enhance your productivity.",
+            "feature" : "Ergonomic Design: Tailored to provide maximum comfort and support for your back, reducing strain during long sitting hours.",
+            "category": "men's clothing",
+            "image": "https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129805.jpg",
+            "rating": {
+              "offer": "20%",
+              "count": "Best Seller"
+            }
+          },
+          {
+            "id": 2,
+            "title": "Sleek Style",
+            "price": 2000,
+            "description": "Step up your workspace with our Modern Comfort Executive Chair, designed to provide the perfect blend of style, comfort, and functionality. Ideal for long hours of work or study, this chair offers superior lumbar support, adjustable features, and a sleek, contemporary look that suits any office environment.",
+            "category": "men's clothing",
+            "image": "https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129803.jpg",
+            "rating": {
+              "offer": "35%"
+       
+            }
+          },
+          {
+            "id": 3,
+            "title": "Elegant Lounge",
+            "price": 3000,
+            "description": "Transform your living room with our Luxurious Velvet Sofa, a perfect blend of contemporary design and ultimate comfort. This sofa brings a touch of sophistication to any room with its rich velvet fabric, plush cushioning, and sleek silhouette. Whether you’re hosting guests or enjoying a quiet evening at home, this sofa is your go-to for relaxation and style",
+            "category": "men's clothing",
+            "image": "https://img.freepik.com/free-photo/gray-sofa-brown-living-room-with-copy-space_43614-954.jpg",
+            "rating": {
+              "offer": "20%"
+            }
+          },
+          {
+            "id": 4,
+            "title": "Cozy Retreat",
+            "price": 5000,
+            "description": "Elevate your home with the Complete Comfort Living Set, featuring a stylish sofa and matching chair designed to offer unparalleled comfort and modern elegance. Whether you're hosting guests, enjoying a cozy night in, or simply unwinding after a long day, this set provides the perfect combination of luxury and practicality for any living space.",
+            "category": "men's clothing",
+            "image": "https://img.freepik.com/premium-photo/blue-sofa-gray-armchair-spacious-living-room-interior-with-plants-shelves-near-wooden-table_41470-1573.jpg",
+            "rating": {
+              "offer": "25%",
+              "count": "Best Seller"
+            }
+        }, 
+
+          {
+            "id": 5,
+            "title": "Sofa Bed",
+            "price": 10000,
+            "description": "Maximize your living space with our Convertible Sofa Bed, the perfect solution for those who want both comfort and practicality. Designed to seamlessly transition from a stylish sofa to a comfortable bed, this versatile piece is ideal for small apartments, guest rooms, or living rooms where space is limited but style and functionality are a must.",
+            "category": "men's clothing",
+            "image": "https://img.freepik.com/free-photo/gray-sofa-white-living-room-with-copy-space_43614-909.jpg",
+            "rating": {
+              "offer": "10%"
+            }
+        },
+
+        {
+          "id": 6,
+          "title": "Sofa Bliss",
+          "price": 10000,
+          "description": "Introducing the Sofa Bliss, your ultimate destination for relaxation. Designed for those who value both style and comfort, this luxurious sofa brings the perfect balance of plush seating and modern elegance to your living space. Whether you’re curling up with a good book, entertaining guests, or enjoying family movie nights, the Sofa Bliss offers unparalleled comfort and sophistication.",
+          "category": "men's clothing",
+          "image": "https://img.freepik.com/premium-photo/white-minimalist-interior-living-room-have-sofa-decoration_41470-4774.jpg",
+          "rating": {
+            "offer": "50%"
+          }
+      }, 
+
+      {
+        "id": 7,
+        "title": "Modern Style",
+        "price": 20000,
+        "description": "Transform your home with our Best Seller Modern Style Living Set, a perfect combination of sleek design and unmatched comfort. This set features a beautifully crafted sofa, a stylish chair, and a matching table, all designed to complement each other and elevate your living space. Whether you’re furnishing a new home or updating your décor, this set offers the perfect balance of modern aesthetics and everyday functionality.Best Seller Offer – Limited Time Only!",
+        "category": "men's clothing",
+        "image": "https://t4.ftcdn.net/jpg/03/71/92/67/360_F_371926762_MdmDMtJbXt7DoaDrxFP0dp9Nq1tSFCnR.jpg",
+        "rating": {
+          "offer": "10%",
+          "count": "Best Seller"
+        }
+    }, 
+
+    {
+      "id": 8,
+      "title": "Soft Touch",
+      "price": 8000,
+      "description": "Experience the perfect blend of luxury and comfort with our Soft Touch sofa and chair set. Designed to provide a cloud-like seating experience, this collection features ultra-soft, plush upholstery that invites you to relax and unwind in style. Whether you’re lounging with a book or hosting friends, the Soft Touch set offers both timeless elegance and unbeatable comfort.",
+      "category": "men's clothing",
+      "image": "https://thumbs.dreamstime.com/b/urban-jungle-trendy-living-room-interior-white-couch-black-knot-pillow-wooden-furniture-copy-space-empty-wall-174228512.jpg",
+      "rating": {
+        "offer": "20%"
+      }
+  }
+    ]
+   
+  }
