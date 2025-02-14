@@ -21,8 +21,7 @@ export default function Products () {
     let products = useSelector((state) => state.products)
     let dispatch = useDispatch(); 
     
-  console.log(Array.isArray(products))
-  console.log(products)
+
 
     useEffect(() => {
         dispatch(fetchProduct())
@@ -30,13 +29,11 @@ export default function Products () {
 
     function alarm () {
       Swal.fire({
-        position: "center-top",
         icon: "success",
         title: "Product has added to Cart",
         showConfirmButton: false,
         timer: 1200,
         background: "#fff",
-        borderRaduis: "50px",
         color : "#000"
       });
     }

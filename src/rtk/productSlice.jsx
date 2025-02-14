@@ -4,7 +4,6 @@
     export let fetchProduct =  createAsyncThunk("productSlice/fetchProduct", async() => {
     let res = await fetch("/db.json")
     let data = await res.json()
-    console.log(data)
     return data
     })
 

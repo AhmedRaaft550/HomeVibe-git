@@ -1,14 +1,14 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './login.css'
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+
 
 export function onSubmit (event) {
   event.preventDefault()
-  // navigate('/pay');
+ 
 }
 export default function Login () {
-  const navigate = useNavigate(); 
+  
   
 
 
@@ -25,7 +25,7 @@ export default function Login () {
   
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" required/>
+          <Form.Control type="password" placeholder="Password" required autoComplete='off'/>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
          
