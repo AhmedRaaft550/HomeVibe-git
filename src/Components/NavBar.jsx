@@ -48,6 +48,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='myAutoNav'>
           <Nav className="me-auto" >
+            <Link onClick={() => handleProductLinkClick()} className='nav-link' to="/">HOME</Link>
             <a  onClick={() => handleProductLinkClick("products")} href='#products' className='nav-link'>PRODUCTS</a>
             <a onClick={() => handleProductLinkClick("about")} href='#about' className='nav-link'>ABOUT</a>
             <Link onClick={() => close()} to="/cart" className='nav-link'>CART - <span className='cart-length bg-danger'>{cart.length}</span></Link>
