@@ -144,6 +144,12 @@
     border-radius: 20px;
   
   }
+
+  @media (max-width: 1420px) {
+    .mycheckoutpage {
+      width: 101% !important;
+    }
+  }
   
   .mycheckoutpage .mybtn {
     position: absolute;
@@ -155,6 +161,12 @@
     align-items: center;
     gap: 20px;
     
+  }
+
+  @media (max-width: 1420px) {
+    .mycheckoutpage .mybtn  {
+      flex-direction: column;
+    }
   }
   
   .mycheckoutpage .mybtn .btn {

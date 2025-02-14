@@ -1,15 +1,22 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { Link } from 'react-router';
 import './login.css'
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+
 
 export default function Login () {
+  const navigate = useNavigate(); 
+function onSubmit (event) {
+  event.preventDefault()
+  // navigate('/pay');
+}
+
     return (
    <div className="sign">
-         <Form className='login-form'>
+         <Form className='login-form' onSubmit={onSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>UserName</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control type="email" placeholder="Enter email" required />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
@@ -17,14 +24,14 @@ export default function Login () {
   
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Control type="password" placeholder="Password" required/>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
          
         </Form.Group>
-        <Link  to="/pay" className='btn btn-primary' variant="primary" type="submit">
+        <Button  to="/pay" className='btn btn-primary' variant="primary" type="submit">
           Log in
-        </Link>
+        </Button>
       </Form>
    </div>
     )
