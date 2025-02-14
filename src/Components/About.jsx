@@ -6,7 +6,7 @@ import './about.css'
 
 function About() {
   return (
-<div className="about">
+<div className="about" id='about'>
 <h1>About HomeVibes</h1>
 <div className='container'>
 <div className="about-text">

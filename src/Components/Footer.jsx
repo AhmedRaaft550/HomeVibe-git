@@ -12,7 +12,6 @@ function Footer() {
             <h1> - HomeVibe -</h1>
         </Card.Title>
         <p>"Your Style, Your Way – Customize Your Experience Today!"</p>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
       </Card.ImgOverlay>
     </Card>
 </div>

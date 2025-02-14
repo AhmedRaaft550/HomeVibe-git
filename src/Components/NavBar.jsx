@@ -5,9 +5,28 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router';
+import { useNavigate } from 'react-router';
 
 
 function NavBar() {
+
+  const navigate = useNavigate();
+
+  const handleProductLinkClick = (sectionId) => {
+    // to close the nav bar
+    close();
+
+    // Navigate to the Home page
+    navigate('/');
+
+    // After navigation, scroll to the products section
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); 
+  };
 
   function close () {
 
@@ -29,8 +48,8 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='myAutoNav'>
           <Nav className="me-auto" >
-            <Link onClick={() => close()} to="/" className='nav-link'>PRODUCTS</Link>
-            <Link onClick={() => close()} to="/" className='nav-link'>ABOUT</Link>
+            <a  onClick={() => handleProductLinkClick("products")} href='#products' className='nav-link'>PRODUCTS</a>
+            <a onClick={() => handleProductLinkClick("about")} href='#about' className='nav-link'>ABOUT</a>
             <Link onClick={() => close()} to="/cart" className='nav-link'>CART - <span className='cart-length bg-danger'>{cart.length}</span></Link>
            
           </Nav>

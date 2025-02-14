@@ -46,11 +46,11 @@ export default function Products () {
     
       return (
 
-        <div className="container products-container ">
+        <div className="container products-container" id='products' >
         <h2 className='product-title'>Discover the Perfect Piece for Your Home</h2>
         <Row>
             {products.map((x) => {
-              return  <Col key={x.id} className='my-col'>
+              return  <Col key={x.id} className='my-col' >
              <Card style={{ width: '18rem' }}>
              <Card.Img variant="top" src={x.image} />
              <Card.Body>
