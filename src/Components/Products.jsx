@@ -17,6 +17,17 @@ import './product.css'
 
 */
 
+export function alarm () {
+  Swal.fire({
+    icon: "success",
+    title: "Product has added to Cart",
+    showConfirmButton: false,
+    timer: 1200,
+    background: "#fff",
+    color : "#000"
+  });
+}
+
 export default function Products () {
     let products = useSelector((state) => state.products)
     let dispatch = useDispatch(); 
@@ -27,16 +38,7 @@ export default function Products () {
         dispatch(fetchProduct())
     },[dispatch])
 
-    function alarm () {
-      Swal.fire({
-        icon: "success",
-        title: "Product has added to Cart",
-        showConfirmButton: false,
-        timer: 1200,
-        background: "#fff",
-        color : "#000"
-      });
-    }
+    
 
 
 

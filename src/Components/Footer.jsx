@@ -1,6 +1,10 @@
 import Card from 'react-bootstrap/Card';
 import footerImg from '../images/myfooter.jpg'
 import './footer.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook , faInstagram, faXTwitter} from '@fortawesome/free-brands-svg-icons';
+
+
 
 function Footer() {
   return (
@@ -12,9 +16,15 @@ function Footer() {
             <h1> - HomeVibe -</h1>
         </Card.Title>
         <p>"Your Style, Your Way – Customize Your Experience Today!"</p>
-        <p style={{fontWeight:"bold"}}>&copy; 2024 Created by Ahmed Raaft. All rights reserved.</p>
       </Card.ImgOverlay>
+      <div className="icons">
+      <FontAwesomeIcon icon={faFacebook} />
+      <FontAwesomeIcon icon={faInstagram} />
+      <FontAwesomeIcon icon={faXTwitter} />
+      </div>
     </Card>
+    <p className='copy-right'>&copy; 2024 Created by Ahmed Raaft. All rights reserved.</p>
+  
 </div>
   );
 }

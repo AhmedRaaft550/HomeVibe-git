@@ -34,3 +34,30 @@
     font-family: 'Times New Roman', Times, serif;
    
   }
+
+  .footer .icons {
+   
+    position:absolute;
+    bottom: 20px ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+   
+  }
+
+  @media (max-width: 500px) {
+    .footer .icons {
+      bottom: -25px;
+    }
+  }
+
+  .footer .icons svg {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .footer .copy-right {
+    margin: 0 !important; 
+  }

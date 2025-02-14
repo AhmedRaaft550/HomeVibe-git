@@ -4,11 +4,19 @@ import { newProduct } from '../rtk/AddProduct';  // Import your action if needed
 import { addToCart } from '../rtk/cartSlice';
 import { Link } from 'react-router';
 import './productDetails.css'
+import { alarm } from './Products';
+import { useNavigate } from 'react-router';
 
 function ProductDetails() {
     let mynew = useSelector(state => state.new);
     let dispatch = useDispatch();
 
+    function dispatchAndConfirm (product) {
+        dispatch(addToCart(product))
+        alarm()
+    }
+
+    
 
     return (
         <div className='show-details'>
@@ -18,8 +26,8 @@ function ProductDetails() {
             <p >{mynew.description}</p>
             <p>Price : {mynew.price} AED</p>
             {/* <p className='text-danger'>{mynew.rating.offer} Discount </p> */}
-            <button className='btn info' onClick={() => dispatch(addToCart(mynew))}>Add To Cart</button>
-            <Link to="/back" className='btn back-btn '>Back To Prodcut</Link>
+            <button className='btn info' onClick={() => dispatchAndConfirm(mynew)}>Add To Cart</button>
+            <a className='btn back-btn ' href='/'>Back To Prodcut</a>
            </div>
            
         </div>
