@@ -31,13 +31,10 @@ function App() {
       <Route path='cart' element={<Cart />}/>
       <Route path='login' element={<Login/>}/>
       <Route path='sign' element={<Signup/>}/>
-      <Route path="product-detail" element={<ProductDetails/>} />
+      <Route path="product-detail/:id" element={<ProductDetails/>} />
       <Route path='back' element={<Products/>}/>
       <Route path='check' element={<ConfirmbeforeCheck/>}/>
       <Route path='pay' element={<Payment/>}/>
-      
-      
-      
     </Routes>
  
 

@@ -7,15 +7,24 @@ import Products from './Products';
 import { Link } from 'react-router';
 import Mycartflex from './Mycartflex';
 import './cart.css'
+import { useNavigate } from 'react-router';
+import { newProduct } from '../rtk/AddProduct';
 
 export default function Cart() {
     let myCart = useSelector(state => state.cart);
     let dispatch = useDispatch()
 
+  
+    
+    
     let myConstId = 1; 
 
 
-
+    // to back to the product again 
+    let myNav = useNavigate()
+    function backToProduct (component) {
+        myNav(component)
+    }
 
 
     return (
@@ -40,7 +49,7 @@ export default function Cart() {
                             <th>Product</th>
                             <th>Title</th>
                             <th>Price</th>
-                            <th>Remove from the cart</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,10 +62,11 @@ export default function Cart() {
                                         src={x.image}
                                         alt=""
                                         style={{ width: "200px", height: "200px", borderRadius :"20px" }}
-                                    />
+                                           onClick={() => useNavigate(`/product-detail/${x.id}`) }
+                                   />
                                 </td>
                                 <td >{x.title}</td>
-                                <td>{x.price} AED</td>
+                                <td>{x.price}<span style={{marginLeft: "3px"}}>AED</span></td>
 
                                 <td>
                                     <Button onClick={() => dispatch(deleteFromCart(x))} className='delete-btn' >Delete</Button>

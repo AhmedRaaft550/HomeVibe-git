@@ -10,6 +10,8 @@ export let cartSlice = createSlice({
             state.push(action.payload)
         }, 
          deleteFromCart : (state,action) => {
+             console.log(state)
+             console.log(action)
             return state.filter((x) => x.id !== action.payload.id )
          }, 
          clear: (state, action) =>{

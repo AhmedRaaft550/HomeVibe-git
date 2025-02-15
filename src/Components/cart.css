@@ -1,8 +1,12 @@
 .cart {
     /* height: calc(100vh - 50px); */
     height: 100vh;
-  
-    
+  }
+
+  @media (max-width:994px) {
+    .cart {
+   height: 100%;
+    }
   }
   
   .cart-length {
@@ -41,6 +45,7 @@
     transform: translate(-50%,-50%);
     background-color: #61dafbaa !important;
     color: #000 !important;
+    border: 3px solid red;
   }
   
   .delete-btn {
@@ -59,39 +64,47 @@
   
   .mycartflex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-   
+    /* background-color: red; */
   }
 
-  @media (max-width:1404px) {
+  @media (max-width:994px) {
     .mycartflex {
       flex-direction: column;
     }
-    
   }
-  
+
   .table-wrapper {
     max-height: 600px;
-    overflow: auto; /* Adds scrollbars when the content exceeds the max height */
-    width: 100%;
+    overflow: auto; 
   }
+
+  @media (max-width:994px) {
+    .table-wrapper {
+      width: 100%;
+      padding: 0 60px !important;
+    }
+  }
+
   
   .table-wrapper::-webkit-scrollbar {
     width: 10px;   
     height: 10px;  
   }
   
-  
-  
-  .myTable {
+.myTable {
     background-color: transparent !important;
-    width: 700px !important;
+    width: 500px !important;
   }
-  
-  
-  
+
+
+
+.myTable th {
+    background-color: #108caeaa !important;
+  }
+
   .mycontainer{
     display: flex;
     justify-content: center;
@@ -99,7 +112,18 @@
     width: 100% !important;
     padding: 10px;
     margin: 0 auto !important;
-    /* background-color: red !important;  */
+    position: relative;
+  }
+
+  .mycontainer::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #ddd;
+    position: absolute;
+   top: 90%;
+   left: 0;
   }
   
   .mysummary-result {
@@ -120,17 +144,7 @@
    border: none !important; 
    position: relative;
   }
-  
-  .sumamary-title:after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    background-color: #ddd;
-    position: absolute;
-   top: 90%;
-   left: 0;
-  }
+
   
   
   .mycheckoutpage {

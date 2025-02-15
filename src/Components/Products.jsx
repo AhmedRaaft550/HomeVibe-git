@@ -51,8 +51,6 @@ export default function Products () {
     let products = useSelector((state) => state.products)
     let dispatch = useDispatch(); 
 
-
-    
     let [cartCount, setCartCount ] = useState(0)
 
 
@@ -63,6 +61,7 @@ export default function Products () {
     function handleIconAndAddToCart (product) {
       dispatch(product)
       setCartCount(cartCount+ 1)
+      check()
     }
     
       return (
@@ -86,9 +85,8 @@ export default function Products () {
                <Button
                className='addCart' variant="primary" onClick={()=>{
                   handleIconAndAddToCart(addToCart(x))
-                  check()
                }}>Add To Cart</Button>
-               <Link to="/product-detail" className='info btn' variant="primary" onClick={() => dispatch(newProduct(x))}>Product Details</Link>
+               <Link to= {`/product-detail/${x.id}`}  className='info btn' variant="primary" onClick={() => dispatch(newProduct(x))}>Product Details</Link>
                  </Card.Body>
            </Card>
              </Col>

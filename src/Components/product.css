@@ -62,14 +62,10 @@
       font-family:'Times New Roman', Times, serif;
       font-weight: 400;
     }
-    
-    
-    
-    
+
     
     .products-container  .card button:hover,
     .products-container  .card .info:hover {
-    
       background-color: #108caeaa !important;
     }
 
