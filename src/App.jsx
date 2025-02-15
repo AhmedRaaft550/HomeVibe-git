@@ -18,8 +18,6 @@ import Payment from './Components/Payment'
 
 
 
-
-
 function App() {
 
   
@@ -39,9 +37,10 @@ function App() {
       <Route path='pay' element={<Payment/>}/>
       
       
+      
     </Routes>
-    
  
+
     </div>
   )
 }

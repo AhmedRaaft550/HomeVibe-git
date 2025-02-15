@@ -57,6 +57,20 @@ height: calc(100vh - 2px) !important;
   }
 }
 
+.motion {
+  background-color: wheat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.motion button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
 
 .myCarsoual .carsoual-item .carsoual-cap p ,
 .myCarsoual .carsoual-item .carsoual-cap h3 {

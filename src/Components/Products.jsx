@@ -1,5 +1,5 @@
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Row , Col} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -10,12 +10,10 @@ import { addToCart } from '../rtk/cartSlice';
 import { newProduct } from '../rtk/AddProduct';
 import Swal from 'sweetalert2';
 import './product.css'
+import { useNavigate } from 'react-router';
 
 
 
-/*
-
-*/
 
 export function alarm () {
   Swal.fire({
@@ -29,23 +27,48 @@ export function alarm () {
 }
 
 export default function Products () {
+
+  let navigate = useNavigate(); 
+
+  // to add the product from the home page 
+  let check = () => {
+    Swal.fire({
+      title: "Product has added to Cart",
+      icon: "success",
+      showCancelButton: true,
+      confirmButtonColor: "#000",
+      cancelButtonColor: "#d33",
+      cancelButtonText: "Continue Shopping" ,
+      confirmButtonText: "Go to Cart Page"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate("/cart")
+      }
+    });
+  }
+
+
     let products = useSelector((state) => state.products)
     let dispatch = useDispatch(); 
+
+
     
+    let [cartCount, setCartCount ] = useState(0)
 
 
     useEffect(() => {
         dispatch(fetchProduct())
     },[dispatch])
 
-    
-
-
-
+    function handleIconAndAddToCart (product) {
+      dispatch(product)
+      setCartCount(cartCount+ 1)
+    }
     
       return (
 
-        <div className="container products-container" id='products' >
+        <div className="container products-container" id='products' 
+        >
         <h2 className='product-title'>Discover the Perfect Piece for Your Home</h2>
         <Row>
             {products.map((x) => {
@@ -60,9 +83,10 @@ export default function Products () {
                  Some quick example text to build on the card title and make up the
                  bulk of the card's content.
                </Card.Text>
-               <Button className='addCart' variant="primary" onClick={()=>{
-                  dispatch(addToCart(x))
-                  alarm()
+               <Button
+               className='addCart' variant="primary" onClick={()=>{
+                  handleIconAndAddToCart(addToCart(x))
+                  check()
                }}>Add To Cart</Button>
                <Link to="/product-detail" className='info btn' variant="primary" onClick={() => dispatch(newProduct(x))}>Product Details</Link>
                  </Card.Body>
@@ -70,16 +94,7 @@ export default function Products () {
              </Col>
             })}
          </Row>
-       
-             </div>
-      )
-  
     
-   
-}
-
-/*
-       
-   
-
-*/
+      </div>
+      )
+          }

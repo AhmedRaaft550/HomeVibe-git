@@ -1,12 +1,12 @@
 .products-container {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
+    position: relative;
     }
     
     .product-title {
       color: #108caeaa !important;
       font-family:'Times New Roman', Times, serif !important;
-      /* font-weight: 600; */
       text-transform: capitalize;
     }
     
@@ -72,4 +72,5 @@
     
       background-color: #108caeaa !important;
     }
-    
+
+

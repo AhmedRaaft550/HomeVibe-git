@@ -56,6 +56,7 @@ function NavBar() {
           </Nav>
             <Link onClick={() => close()} to="/login" className='btn btn-primary ms-auto'>Log in </Link>
             <Link onClick={() => close()} to="/sign" className='btn btn-primary ms-3'>Sign in </Link>
+           
         </Navbar.Collapse>
       </Container>
     </Navbar>
