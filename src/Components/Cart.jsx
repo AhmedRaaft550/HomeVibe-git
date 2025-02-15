@@ -61,7 +61,7 @@ export default function Cart() {
                                     <Image
                                         src={x.image}
                                         alt=""
-                                        style={{ width: "200px", height: "200px", borderRadius :"20px" }}
+                                        style={{ width: "100px", height: "100px", borderRadius :"20px" }}
                                            onClick={() => useNavigate(`/product-detail/${x.id}`) }
                                    />
                                 </td>

@@ -2,7 +2,7 @@ import React from 'react'
 import dreamHomeImg from './dreamhome.jpg'
 import { motion } from "framer-motion";
 
-console.log(motion)
+
 
 
 function DreamHome() {
